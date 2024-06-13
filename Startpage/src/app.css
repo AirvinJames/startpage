@@ -1,0 +1,19 @@
+:root {
+    color: #cdd6f4;
+    background-color: #11111b;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}

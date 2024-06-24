@@ -1,5 +1,6 @@
 <script>
     import Clock from "./lib/Clock.svelte";
+    import Search from "./lib/Search.svelte";
     import { onMount } from 'svelte';
 
     let monthLookUpTable = {
@@ -47,6 +48,7 @@
         <h1>Good {timeOfDay}, {name}!</h1>
         <p>Today is {monthName} {day}, {year}</p>
         
+        <Search />
     </div>
 </main>
 
@@ -56,18 +58,22 @@
         --ui-background: #1e1e2e;
         --transparent-overlay: #11111b56;
 
-        --large-font-size: 5rem;
-        --medium-font-size: 3rem;
-        --small-font-size: 1.5rem;
+        --large-font-size: 2.5rem;
+        --medium-font-size: 2rem;
+        --small-font-size: 1.3rem;
     }
     main {
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap: 2rem;
+        column-gap: 5rem;
 
         font-family: 'JetBrains Mono', monospace;
         color: var(--text-color);
+    }
+
+    h1 {
+        font-size: var(--large-font-size);
     }
 
     .side-container {

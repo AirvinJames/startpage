@@ -24,16 +24,6 @@
 </div>
 
 <style>
-    :root {
-        --text-color: #cdd6f4;
-        --ui-background: #1e1e2e;
-        --transparent-overlay: #11111b56;
-
-        --large-font-size: 5rem;
-        --medium-font-size: 3rem;
-        --small-font-size: 1.5rem;
-    }
-
 
     #clock {
         display: flex;
@@ -50,12 +40,15 @@
         border-radius: 0.5rem;
         font-size: var(--medium-font-size);
 
-        background-color: var(--ui-background);
+        /*background-color: var(--transparent-overlay);*/
+        border: 2px solid #f5c2e7;
+        /*box-shadow: 0 0 15px 15px var(--ui-background), inset 0 0 15px 15px var(--ui-background);*/
     }
 
     #clock p { 
         margin-top: 4rem;
         margin-bottom: 4rem;
+        font-size: var(--large-font-size);
     }
 
     .separator {

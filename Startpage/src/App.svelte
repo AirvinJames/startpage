@@ -100,7 +100,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 35vw;
+        width: 38vw;
         height: 100%;
         row-gap: 1rem;
     }

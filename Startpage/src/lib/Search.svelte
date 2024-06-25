@@ -17,7 +17,7 @@
 
 <style>
     form {
-        width: 100%;
+        width: 110%;
         display: flex;
         justify-content: space-between;
         align-items: center;

@@ -56,7 +56,7 @@
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        width: 100%;
+        width: 110%;
         height: 100%;
 
         border-radius: 5px;

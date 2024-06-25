@@ -1,6 +1,7 @@
 <script>
     import Clock from "./lib/Clock.svelte";
     import Search from "./lib/Search.svelte";
+    import Links from "./lib/Links.svelte";
     import { onMount } from 'svelte';
 
     let monthLookUpTable = {
@@ -46,22 +47,41 @@
 
     <div class="side-container">
         <h1>Good {timeOfDay}, {name}!</h1>
-        <p>Today is {monthName} {day}, {year}</p>
+        <p id="date-text">Today is <span id="date">{monthName} {day}, {year}</span></p>
         
         <Search />
+        <Links />
     </div>
 </main>
 
 <style>
-    :root {
+    :global(:root) {
         --text-color: #cdd6f4;
         --ui-background: #1e1e2e;
         --transparent-overlay: #11111b56;
 
-        --large-font-size: 2.5rem;
-        --medium-font-size: 2rem;
-        --small-font-size: 1.3rem;
+        --accent: #a6e3a1;
+
+        --large-font-size: 2rem;
+        --medium-font-size: 1.2rem;
+        --small-font-size: 1rem;
     }
+
+    h1 {
+        margin: 0;
+        font-weight: 400;
+        font-size: var(--large-font-size);
+    }
+
+    #date-text {
+        font-size: var(--medium-font-size);
+        color: #a6adc8;
+    }
+
+    #date {
+        color: var(--accent);
+    }
+
     main {
         display: flex;
         justify-content: center;
@@ -72,13 +92,16 @@
         color: var(--text-color);
     }
 
-    h1 {
-        font-size: var(--large-font-size);
+    p {
+        margin: 0;
     }
 
     .side-container {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
+        width: 35vw;
+        height: 100%;
+        row-gap: 1rem;
     }
 </style>

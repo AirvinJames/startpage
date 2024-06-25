@@ -10,20 +10,42 @@
     }
 </script>
 
-<main>
-    <form on:submit={handleSubmit}>
-        <input type="text" bind:value={query} placeholder="Search something on Google" />
-        <button type="submit">Search</button>
-    </form>
-</main>
+<form on:submit={handleSubmit}>
+    <input type="text" bind:value={query} placeholder="Search something on Google" />
+    <button type="submit">Search</button>
+</form>
 
 <style>
-    main {
-        text-align: center;
+    form {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
     }
     input {
-        margin-right: 0.5em;
+        all: unset;
         font-size: var(--small-font-size);
+        width: 80%;
+        text-align: start;
+        height: 1.5rem;
+        padding: 0.7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 5px;
+        background-color: var(--ui-background);
     }
+
+    button {
+        all: unset;
+        padding: 0.5rem;
+        border-radius: 5px;
+        color: var(--accent);
+        background-color: #11111b;
+        font-size: var(--small-font-size);
+        width: 20%;
+        cursor: pointer;
+        border: 2px solid var(--accent);
+    }
+
 </style>

@@ -17,10 +17,12 @@
 	});
 </script>
 
-<div id="clock">
-    <p>{hours}</p>
-    <span class="separator"></span>
-    <p>{minutes}</p>
+<div id="bg">
+    <div id="clock">
+        <p>{hours}</p>
+        <span class="separator"></span>
+        <p>{minutes}</p>
+    </div>
 </div>
 
 <style>
@@ -31,30 +33,28 @@
         align-items: center;
         justify-content: center;
         width: 90%;
-        height: 50vh;
-        width: 10vw;
-        font-size: 3.2rem;
+        height: 35vh;
+        width: 11vw;
+        row-gap: 0.5rem;
 
         font-family: 'JetBrains Mono', monospace;
         
         border-radius: 0.5rem;
         font-size: var(--medium-font-size);
 
-        /*background-color: var(--transparent-overlay);*/
-        border: 2px solid #f5c2e7;
+        background-color: var(--transparent-overlay);
+        /*border: 2px solid #f5c2e7;*/
         /*box-shadow: 0 0 15px 15px var(--ui-background), inset 0 0 15px 15px var(--ui-background);*/
     }
 
     #clock p { 
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-        font-size: var(--large-font-size);
+        font-size: 2.7rem;
     }
 
     .separator {
         width: 20%;
         height: 3px;
-        background-color: var(--text-color);
+        background-color: var(--accent);
         border-radius: 2px;
     }
 </style>

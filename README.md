@@ -7,4 +7,6 @@
 + Links
 + Date
 
+Made with Svelte
+
 Background of clock is from [here](https://imgur.com/a/nature-wallpaper-pack-u7VRW)

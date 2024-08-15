@@ -11,7 +11,7 @@
 </script>
 
 <form on:submit={handleSubmit}>
-    <input type="text" bind:value={query} placeholder="Search something on Google" />
+    <input type="text" bind:value={query} placeholder="Search something on Google"/>
     <button type="submit">Search</button>
 </form>
 

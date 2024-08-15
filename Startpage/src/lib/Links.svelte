@@ -26,7 +26,7 @@
                 <!--<h2>School</h2>-->
                 <ul>
                     <li id="docs"><a href="https://www.docs.google.com"><BookText />Google Docs</a></li>
-                    <li id="chatgpt"><a href="https://www.chat.openai.com"><BotMessageSquare />ChatGPT</a></li>
+                    <li id="chatgpt"><a href="https://chatgpt.com"><BotMessageSquare />ChatGPT</a></li>
                     <li id="classroom"><a href="https://www.classroom.google.com"><SquareLibrary />GClassroom</a></li>
                     <li id="codechum"><a href="https://batstate-u.codechum.com/"><CodeXml />CodeChum</a></li>
                 </ul>

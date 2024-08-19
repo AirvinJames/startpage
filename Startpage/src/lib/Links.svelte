@@ -1,7 +1,7 @@
 <script>
     import { House, BriefcaseBusiness, BookMarked,
     Youtube, Facebook, Music, Swords, AtSign, SquareLibrary, CodeXml,
-    BotMessageSquare, BookText, Paintbrush, Github, Wrench } from 'lucide-svelte';
+    BotMessageSquare, BookText, Paintbrush, Github, Wrench, NotebookPen } from 'lucide-svelte';
 
     let currentSection = 'home';
 
@@ -16,7 +16,7 @@
             {#if currentSection === 'home'}
                 <!--<h2>Home</h2>-->
                 <ul>
-                    <li id="spotify"><a href="https://www.spotify.com"><Music />Spotify</a></li>
+                    <li id="trello"><a href="https://trello.com/b/syYhq2gP/school"><NotebookPen />Trello</a></li>
                     <li id="facebook"><a href="https://www.facebook.com"><Facebook />Facebook</a></li>
                     <li id="youtube"><a href="https://www.youtube.com"><Youtube />YouTube</a></li>
                     <li id="chess"><a href="https://www.chess.com"><Swords />Chess</a></li>
